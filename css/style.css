@@ -1,0 +1,50 @@
+.jumbotron {
+	height: 500px;
+	background-image: url('../img/cover.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 -280px;
+	color: #eaeaea;
+	overflow: hidden;
+}
+
+.jumbotron img {
+    width: 25%;
+}
+
+.jumbotron .container h1 {
+    margin: 0 auto;
+    position: absolute;
+    top: 110px;
+    left:30%;
+    opacity: 80%;
+}
+
+section {
+    min-height: 520px;
+}
+
+section.trophy img{
+    width: 30%;
+}
+
+img.extra {
+    width: 40% !important; 
+}
+
+.pLeft,
+.pRight {
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(15deg);
+	transition: 1s;
+}
+
+.pRight {
+	transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pLeft.pShow,
+.pRight.pShow {
+	opacity: 1;
+	transform: translate(0, 0);
+}
